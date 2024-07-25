@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        nav {
+            width: 100%;
+            background-color: #1f1f1f;
+            padding: 15px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul a {
+            text-decoration: none;
+            color: #f0f0f0;
+            font-weight: 400;
+            padding: 10px 15px;
+            display: block;
+        }
+        nav ul a:hover {
+            background-color: #333333;
+            border-radius: 5px;
+        }
+        .section {
+            width: 80%;
+            max-width: 800px;
+            text-align: center;
+            margin-top: 50px;
+            display: none; 
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #1e1e1e;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        .section h2 {
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: #e0e0e0;
+        }
+        .section p, .contact-info ul {
+            margin: 0 auto;
+            max-width: 600px;
+            text-align: center;
+            color: #b0b0b0;
+            font-weight: 300;
+        }
+        .contact-info ul {
+            list-style: none;
+            padding: 0;
+        }
+        .contact-info ul li {
+            margin: 10px 0;
+        }
+        .contact-info ul li a {
+            color: #03a9f4;
+            text-decoration: none;
+            font-size: 1.2em;
+            transition: color 0.3s ease, background-color 0.3s ease;
+        }
+        .contact-info ul li a:hover {
+            color: #ffffff; /* Change text color on hover */
+            background-color: #03a9f4; /* Change background color on hover */
+            border-radius: 5px;
+            padding: 5px;
+            text-decoration: underline;
+        }
+        .project {
+            text-align: left;
+            margin-top: 20px;
+        }
+        .project ul {
+            list-style: disc;
+            padding-left: 20px;
+        }
+        .project a {
+            color: #03a9f4; 
+            text-decoration: none;
+            font-size: 1.2em;
+            transition: color 0.3s ease, background-color 0.3s ease, padding 0.3s ease;
+            padding: 5px; 
+        }
+        .project a:hover {
+            border-radius: 5px;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#" id="aboutLink">About</a></li>
+            <li><a href="#" id="visionLink">Vision</a></li>
+            <li><a href="#" id="projectsLink">Projects</a></li>
+            <li><a href="#" id="ExperienceLink">Experience</a></li>
+            <li><a href="#" id="contactLink">Contact Me</a></li>
+        </ul>
+    </nav>
+    <div class="section" id="aboutDiv">
+        <h1 id="aboutHeading">Jai Kansal</h1>
+        <img src="1000026448 (720×720).jpg" alt="" style="height: 20vh; border-radius: 10px;" id="aboutImage">
+        <p id="aboutParagraph">Welcome to my portfolio! I am Jai Kansal, a passionate programmer and dedicated learner with a keen interest in data structures and algorithms. Currently, I am interning at VCreate as a Coding Problem Setter, where I create challenging and innovative coding problems and devise multiple solutions for these problems in Java, C++, and Python. This role has sharpened my technical skills and deepened my understanding of problem-solving dynamics.</p>
+        <p>In addition to crafting unique and engaging problems, I am adept at reverse engineering complex problems and developing solutions across various programming languages. This dual capability enables me to approach challenges from multiple angles, making me a versatile and effective problem-solver. My journey is driven by a desire to contribute to the tech community, continuously learn, and push my boundaries in the ever-evolving world of technology.</p>
+    </div>
+
+    <div class="section" id="visionSection">
+        <h2>Vision</h2>
+        <p>As a B.Tech CSE student with a unique blend of academic knowledge and practical experience, I am driven by a passion for innovation and excellence in the tech industry. My role as a Coding Problem Setter Intern at VCreate has equipped me with the skills to design intricate data structures and algorithms problems, as well as to solve them. This hands-on experience has not only enhanced my technical abilities but also fostered a deep understanding of computational thinking and analytical problem-solving.</p>
+        <p>I envision a future where I can leverage my expertise to create impactful software solutions that address real-world challenges. My goal is to join a forward-thinking organization where I can contribute to cutting-edge projects, continue to grow professionally, and collaborate with like-minded individuals who are passionate about technology. I am committed to continuous learning and innovation, always seeking new opportunities to expand my horizons and make meaningful contributions to the tech community.</p>
+    </div>
+
+    <div class="section" id="projectsSection">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Challenging DSA Problems Series</h3>
+            <p><strong>Description:</strong> Developed a series of challenging DSA problems and solutions as part of an internship role. This project involved creating problems with detailed specifications and implementing solutions in multiple programming languages.</p>
+            <p><strong>Technologies Used:</strong> Java, Python, C++</p>
+            <p><strong>Highlights:</strong></p>
+            <ul>
+                <li>Designed problems with various levels of difficulty, focusing on practical applications and theoretical concepts.</li>
+                <li>Implemented solutions efficiently, optimizing for performance and clarity.</li>
+            </ul>
+            <p><strong>Link:</strong> <a href="https://drive.google.com/drive/folders/1XnTQFZAseoiPvgP-9U2O3GCE5MvclvJ9?usp=share_link" target="_blank">View Project on Google Drive</a></p>
+        </div>
+    </div>
+
+    <div class="section" id="ExperienceSection">
+        <h2>Experience</h2>
+        <h3>Coding Problem Setter Intern at VCreate (June 2024 - Present)</h3>
+        <p>At VCreate, I am currently interning as a Coding Problem Setter. My role encompasses creating unique and technically accurate data structures and algorithms (DSA) questions, as well as devising multiple solutions for these problems in Java, C++, and Python. This involves not only designing challenging and engaging problems but also developing and optimizing diverse solutions to ensure robustness and efficiency across different programming languages. This experience has honed my problem-solving skills and deepened my understanding of various computational approaches, enabling me to tackle complex problems from multiple angles and contribute effectively to the tech community.</p>
+    </div>
+
+    <div class="section contact-info" id="contactInfo">
+        <h2>Contact Information</h2>
+        <ul>
+            <li><a href="tel:7417198372">Phone: 7417198372</a></li>
+            <li><a href="mailto:jaikansal85@gmail.com">Email: jaikansal85@gmail.com</a></li>
+            <li><a href="https://www.linkedin.com/in/jai-kansal-371738297/" target="_blank">LinkedIn: linkedin.com/in/jai-kansal</a></li>
+            <li><a href="Jai Resume.pdf" target="_blank">Download Resume (PDF)</a></li>
+        </ul>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        function animateSection(linkId, sectionId) {
+            document.getElementById(linkId).addEventListener('click', function(event) {
+                event.preventDefault();
+                const section = document.getElementById(sectionId);
+
+                if (section.style.display === 'none' || section.style.opacity === '0') {
+                    section.style.display = 'block';
+                    const tl = gsap.timeline();
+                    tl.fromTo(section, { opacity: 0 }, { opacity: 1, duration: 1 });
+                } else {
+                    gsap.to(section, { opacity: 0, duration: 1, onComplete: () => { section.style.display = 'none'; } });
+                }
+            });
+        }
+
+        animateSection('aboutLink', 'aboutDiv');
+        animateSection('visionLink', 'visionSection');
+        animateSection('projectsLink', 'projectsSection');
+        animateSection('ExperienceLink', 'ExperienceSection');
+        animateSection('contactLink', 'contactInfo');
+
+        window.addEventListener('load', function() {
+            gsap.set("#aboutDiv, #visionSection, #projectsSection, #ExperienceSection, #contactInfo", { display: "none" });
+        });
+    </script>
+</body>
+</html>
